@@ -50,7 +50,6 @@ Ensure you have the following technologies and tools installed. Links to officia
  - Flask - 3.0.0
  - Axios - 1.6.5
  - Web3 - 6.14.0
- - 
 
 **Tools and Services**:
 
