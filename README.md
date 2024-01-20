@@ -62,7 +62,7 @@ Ensure you have the following technologies and tools installed. Links to officia
  - [Hyperledger Fabric 2.5](https://hyperledger-fabric.readthedocs.io/en/release-2.5/)
 
 
-### How to run the different scripts
+# How to run the different scripts
 
 Here is how this whole solution should be tested
 
