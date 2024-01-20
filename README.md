@@ -54,18 +54,28 @@ Ensure you have the following technologies and tools installed. Links to officia
 **Tools and Services**:
 
  - Docker - Containerization Platform
+ - Hardhat - Deploying Smart contracts Tool
 
 **Blockchain Technologies**:
 
- - Ocean Protocol V4 - https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/install.md
- - Hyperledger Fabric 2.5 - https://hyperledger-fabric.readthedocs.io/en/release-2.5/
+ - [Ocean Protocol V4](https://github.com/oceanprotocol/ocean.py/blob/main/READMEs/install.md)
+ - [Hyperledger Fabric 2.5](https://hyperledger-fabric.readthedocs.io/en/release-2.5/)
 
 
-### Configuration
+### How to run the different scripts
 
-...
+Here is how this whole solution should be tested
 
-### Verifying the Setup
-
-...
+| Ordem   | Script     | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `1` | `publish_access_remote.py` | Python Script|
+| :---------- | :--------- | :---------------------------------- |
+| `2` | `network.sh` (from Hyperledger fabric guide) | Fabric network|
+| :---------- | :--------- | :---------------------------------- |
+| `3` | `command` | Command to deploy Payment smart contract|
+| :---------- | :--------- | :---------------------------------- |
+| `4` | `app.ts` | Compile and Run Fabric Application|
+| :---------- | :--------- | :---------------------------------- |
+| `5` | `command` | Commands to interact with Fabric network|
+| :---------- | :--------- | :---------------------------------- |
 
