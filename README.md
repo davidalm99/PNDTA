@@ -69,13 +69,8 @@ Here is how this whole solution should be tested
 | Ordem   | Script     | Descrição                           |
 | :---------- | :--------- | :---------------------------------- |
 | `1` | `publish_access_remote.py` | Python Script|
-| :---------- | :--------- | :---------------------------------- |
-| `2` | `network.sh` (from Hyperledger fabric guide) | Fabric network|
-| :---------- | :--------- | :---------------------------------- |
+| `2` | `network.sh` (from Hyperledger Fabric guide) | Fabric network|
 | `3` | `command` | Command to deploy Payment smart contract|
-| :---------- | :--------- | :---------------------------------- |
 | `4` | `app.ts` | Compile and Run Fabric Application|
-| :---------- | :--------- | :---------------------------------- |
 | `5` | `command` | Commands to interact with Fabric network|
-| :---------- | :--------- | :---------------------------------- |
 
