@@ -1,7 +1,37 @@
-# Fabric Application
-This application serves as a specialized observer within the Fabric blockchain network. Its main role is to keenly monitor a specific type of event occurring on the network. Imagine it as a diligent sentinel, always on the lookout for a particular signal. Once this event is detected, the application springs into action, gathering important details related to the event.
+# 🔐 Identity Management & Chaincode Interaction for Hyperledger Fabric Application
 
-One of the key functionalities of this application is its ability to gather relevant information from Promissory Notes. These notes act like digital contracts, which are used as a promise between a data buyer and a data seller and a guarantee that data seller will be rewarded. Upon the occurrence of the monitored event, our application automatically compiles the necessary information from these Promissory Notes and dispatches it via an HTTP payload to the Python Flask endpoint. This process facilitates a seamless and secure exchange of value between those who seek data and those who provide it.
+This module contains scripts and an application entry point for identity enrollment, user registration, and chaincode interaction within a **Hyperledger Fabric** network using **TypeScript** and **Node.js**.
+
+---
+
+## 📄 File Overview
+
+### `enrollAdmin.js`
+- Enrolls the default **admin identity** with the Fabric Certificate Authority (CA).
+- Stores the resulting X.509 credentials in a local file-based wallet.
+- Must be run before registering other users.
+
+### `registerUser.js`
+- Registers and enrolls a new user with the Fabric CA using the enrolled admin.
+- Also stores the resulting identity in the wallet.
+- Requires a username as a command-line argument.
+
+### `app.ts`
+- TypeScript-based application that likely performs transactions or queries on the Fabric network.
+- Uses the registered user identity from the wallet to connect to the network and interact with chaincode.
+
+---
+
+## 📦 Prerequisites
+
+Make sure your environment has the following installed:
+
+### 🔧 Core Tools
+- Node.js (v14 or later recommended)
+- TypeScript (`npm install -g typescript`)
+- Fabric CA Client SDKs:
+  ```bash
+  npm install fabric-network fabric-ca-client
 
 ## Setup
 
