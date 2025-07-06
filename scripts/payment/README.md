@@ -1,7 +1,35 @@
-# Payment Mechanism
-This application uses a straightforward and custom-made payment system to manage micro-transactions. At the heart of this system is a smart contract named "Payment.sol." Written in Solidity, a programming language for blockchain applications, this contract embodies the simple yet effective logic governing our payment process.
+# 💸 Ocean Protocol – Payment Smart Contract & Deployment
 
-The smart contract "Payment.sol" is deployed on the Mumbai testnet, a network used for testing blockchain technologies. Deployment is conducted through a script named "deploy_Payment.js." This script ensures that our smart contract is correctly integrated into the blockchain. Once deployed, the Payment.sol contract automates the transfer of funds between data buyers and sellers. This system is designed to be efficient and reliable, prioritizing ease of use while ensuring secure and transparent transactions. It's a straightforward solution tailored to our specific transactional needs, offering a hassle-free experience for users.
+This module includes a Solidity smart contract and a deployment script to handle payments between buyers and sellers using the **Ocean Protocol ERC20 token** on the **Polygon Mumbai testnet**.
+
+It is designed to work seamlessly with the Ocean Protocol stack and is typically used to facilitate payments for data access in a decentralized data marketplace setup.
+
+---
+
+## 📁 File Descriptions
+
+### `contracts/Payment.sol`
+- Solidity smart contract that manages payment execution logic.
+- It likely exposes a `triggerPayment(...)` function to transfer tokens from a buyer to a seller.
+- Integrates with Ocean Protocol's ERC20 token and supports modular use with existing datasets and asset agreements.
+- ✅ **Recommended Location**: Place this file under the `contracts/` folder of your **Ocean Protocol Barge stack** (e.g., `~/ocean-protocol/barge/contracts/Payment.sol`).
+
+### `scripts/deploy_payment.js`
+- JavaScript deployment script using **Hardhat** and **ethers.js**.
+- Reads the deployed Ocean token address from the Mumbai testnet config file (`address.json`).
+- Deploys the `Payment` contract and writes its address to `payment_address.txt` for use by backend services or smart contract consumers.
+
+---
+
+## 🌐 Polygon Mumbai Testnet
+
+The deployment targets the **Mumbai testnet**, and it uses the Ocean token contract deployed by the Ocean team.
+
+Ensure you have the Mumbai RPC endpoint set:
+
+```bash
+https://polygon-mumbai-bor.publicnode.com
+```
 
 ## Setup
 
